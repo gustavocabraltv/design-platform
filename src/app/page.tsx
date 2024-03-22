@@ -8,7 +8,8 @@ import Platform from '@/assets/platform.png'
 import Platform2 from '@/assets/left-content.png'
 import StarIcon from '@/assets/star.svg'
 import ShieldIcon from '@/assets/shield.svg'
-
+import MerlinChat from '@/components/MerlinChat'
+import Link from "next/link";
 
 
 export default function Home() {
@@ -28,7 +29,9 @@ export default function Home() {
               <p className="mx-auto max-w-[800px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400 text-center mb-8">
               O Design Hunter é o epicentro da comunidade de design e a melhor plataforma para descobrir e se conectar com designers e oportunidades de emprego.
               </p>
-              <Button className=" rounded-full px-8">Publique uma vaga - GRÁTIS</Button>
+              <Button className="rounded-full px-8">
+                <Link href="https://tools.gomerlin.com.br/chat/c0e7acb3-4b75-4496-bb37-b1a6b92812a3">Publique uma vaga - GRÁTIS</Link>
+              </Button>
       </div>
 
       <div className="w-full max-w-[1246px] px-4 mx-auto flex items-center justify-center flex-col gap-0 py-8 ">
@@ -124,7 +127,7 @@ export default function Home() {
 
             </div>
       </main>
-  
+      <MerlinChat />
     </div>
   );
 }

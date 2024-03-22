@@ -1,3 +1,4 @@
+localStorage.theme = 'light'
 import Image from "next/image";
 import { Button } from "@/components/ui/button"
 import Client1 from '@/assets/client1.png'
